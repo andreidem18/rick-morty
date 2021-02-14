@@ -1,0 +1,21 @@
+a {
+    display: block;
+    text-decoration: none;
+    color: #46b5d1;
+    font-weight: bold;
+    font-size: 0.95rem;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  a:hover {
+    background: #463a3a;
+  }
+  
+  .results {
+    position: absolute;
+    background: #312b2b;
+    right: 15px;
+    left: 15px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
+  }
