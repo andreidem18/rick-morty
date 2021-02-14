@@ -6,6 +6,12 @@
   box-sizing: border-box;
 }
 
+.banner{
+  background-image: url('https://arc-anglerfish-arc2-prod-copesa.s3.amazonaws.com/public/QQWVSJ6MDVGKRELX455KIABEEY.gif');
+  height: 200px;
+  background-position: 45% 33%;
+}
+
 h1 {
   text-align: center;
   font-family: "Pangolin", sans-serif;
