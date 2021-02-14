@@ -1,5 +1,5 @@
 import './App.css';
-import SearchBox from "./components/Search/SearchBox.js";
+import SearchBox from "./Components/Search/SearchBox.js.js";
 
 document.body.style = "background: #272121";
 
