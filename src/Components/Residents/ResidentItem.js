@@ -7,25 +7,27 @@ const ResidentItem = ({ url }) => {
   const [color, setColor] = useState("green");
 
   useEffect(() => {
-    const promise = axios(url);
-    promise.then((res) => {
-      setResident({
-        image: res.data.image,
-        name: res.data.name,
-        status: res.data.status,
-        species: res.data.species,
-        origin: res.data.origin.name,
-        episodes: res.data.episode.length
+    if(url){
+      const promise = axios(url);
+      promise.then((res) => {
+        setResident({
+          image: res.data.image,
+          name: res.data.name,
+          status: res.data.status,
+          species: res.data.species,
+          origin: res.data.origin.name,
+          episodes: res.data.episode.length
+        });
+        if (resident.status === "Alive") {
+          setColor("green");
+        } else if (resident.status === "Dead") {
+          setColor("red");
+        } else {
+          setColor("gray");
+        }
       });
-      if (resident.status === "Alive") {
-        setColor("green");
-      } else if (resident.status === "Dead") {
-        setColor("red");
-      } else {
-        setColor("gray");
-      }
-    });
-}, [url, resident.status]);
+    }
+  }, [url, resident.status]);
 
   return (
     <div className="col-md-6">
