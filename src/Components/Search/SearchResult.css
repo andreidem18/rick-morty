@@ -1,14 +1,19 @@
-a {
-    display: block;
-    text-decoration: none;
+button {
     color: #46b5d1;
+    background: transparent;
+    border: 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
     font-weight: bold;
     font-size: 0.95rem;
     padding: 10px;
     box-sizing: border-box;
     position: relative;
+    outline: 0;
   }
-  a:hover {
+  button:hover {
     background: #463a3a;
   }
   

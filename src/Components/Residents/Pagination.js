@@ -11,13 +11,12 @@ const Pagination = ({ residentsPerPage, totalResidents, paginate, selected }) =>
     <div className="text-center">
       <div className="pagination">
           {pageNumbers.map((number) => (
-              <a 
-              key={number} 
-              href="!#" 
+              <button 
+              key={number}
               onClick={() => paginate(number)}
               className={number === selected ? "selected" : ""}>
                 {number}
-              </a>
+              </button>
           ))}
       </div>
     </div>

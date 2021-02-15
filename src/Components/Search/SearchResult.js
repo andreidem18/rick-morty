@@ -15,13 +15,12 @@ const SearchResult = ({ url, handle }) => {
   }, [url]);
 
   const resultsList = results.map((value) => (
-    <a
-      href="!#"
+    <button
       onClick={() => handle(value.url)}
       key={value.url.substring(41)}
     >
       {value.name}
-    </a>
+    </button>
   ));
 
   return <div className="results">{resultsList}</div>;
